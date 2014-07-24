@@ -78,15 +78,6 @@ class m140724_210946_create_issue_user_and_assignment_tables extends CDbMigratio
 
 	public function safeDown()
 	{
-		/*
-		$this->truncateTable('tbl_project_user_assignment');
-		$this->dropTable('tbl_project_user_assignment');
-		$this->truncateTable('tbl_issue');
-		$this->dropTable('tbl_issue');
-		$this->truncateTable('tbl_user');
-		$this->dropTable('tbl_user');
-		*/
-
 		$this->removeTable('tbl_project_user_assignment');
 		$this->removeTable('tbl_issue');
 		$this->removeTable('tbl_user');
